@@ -29,7 +29,7 @@ function App() {
   };
 
   const copyReactBoxShadow=()=>{
-    const css = `boxShadow: ${generateBoxShadow()}`;
+    const css = `boxShadow: "${generateBoxShadow()}"`;
     navigator.clipboard.writeText(css);
   }
   return (
